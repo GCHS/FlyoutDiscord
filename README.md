@@ -1,5 +1,5 @@
 # FlyoutDiscord
-Makes Discord extra compact with a flyout channel bar and less whitespace
+Makes [Discord](https://discordapp.com/login) extra compact with a flyout channel bar and less whitespace
 
 This is intended for use with the Dark Compact Discord theme via [Stylus](https://github.com/openstyles/stylus) (target discordapp.com) and may not work properly with other themes.
 
