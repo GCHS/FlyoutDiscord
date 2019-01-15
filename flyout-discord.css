@@ -1,0 +1,86 @@
+/* I (Giancarlo Saraceni) wrote this to make Discord more compact vertically and horizontally */
+/* To use this yourself, use Stylus https://github.com/openstyles/stylus and target discordapp.com */
+/* This style targets the Compact Dark theme and may not work correctly on other Discord themes */
+
+/* Turn the channels panel into a flyout */
+/* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
+.channels-Ie2l6A {
+	z-index: 128;
+	transform: translateX(-219px);
+	transition: transform 0.1s;
+	transition-delay: 0.1s;
+	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
+}
+/* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
+.unread-1Dp-OI {
+	position: relative;
+	top: 22px;
+	left: 219px;
+	transition: left;
+	transition-delay: 0.2s;
+	/* wait for fly in start+animation length */
+}
+.guildsWrapper-5TJh6A:hover ~ .flex-1xMQg5 .channels-Ie2l6A,
+.channels-Ie2l6A:hover {
+	transform: translateX(0px);
+	transition-delay: 0.05s;
+}
+.guildsWrapper-5TJh6A:hover ~ .flex-1xMQg5 .channels-Ie2l6A .unread-1Dp-OI,
+.channels-Ie2l6A:hover .unread-1Dp-OI {
+	left: 0px;
+	margin-top: -4px;
+	transition-delay: 0.05s;
+}
+/* scoot the rest of the app over to fit with the hidden channel panel */
+.chat-3bRxxu, /* chat */
+.container-3gCOGc /* friends panel */{
+	margin-left: -223px;
+}
+/* end flyout conversion */
+
+/* code blocks (triple backticks) use Solarized text colors; */
+/* this makes the background Solarized Dark so they look correct (and pretty!) */
+pre code {
+	background-color: #002b36 !important;
+}
+
+/* Turns the background of the New Messages line transparent so that it doesn't block out parts of messages */
+div.divider-3gKybi > span {
+	background-color: transparent !important;
+}
+
+/* the rest of this CSS removes (what I think is) extra whitespace */
+form {
+	margin: 0px 10px !important;
+	box-shadow: none !important;
+}
+.channelTextArea-1LDbYG,
+.channelTextArea-rNsIhG {
+	margin-top: 1px;
+	padding: 0px !important;
+}
+
+/* remove unnecessary whitespace around messages */
+/* vertical... */
+.container-1YxwTf {
+	padding: 1px !important;
+}
+.message-1PNnaP {
+	margin: 0px !important;
+}
+.divider-32i8lo {
+	display: none;
+}
+
+/* ...horizontal */
+.content-3dzVd8 {
+	padding: 0px !important;
+}
+.markup-2BOw-j {
+	margin-left: 60px;
+}
+
+/* Remove .gif insertion and nitro gift button */
+.buttonWrapper-1ZmCpA{
+	display: none;
+}
