@@ -6,7 +6,7 @@
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
 .channels-Ie2l6A {
 	z-index: 128;
-	transform: translateX(-219px);
+	transform: translateX(-220px);
 	transition: transform 0.1s;
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
@@ -15,17 +15,17 @@
 .unread-1Dp-OI {
 	position: relative;
 	top: 22px;
-	left: 219px;
+	left: 220px;
 	transition: left;
 	transition-delay: 0.2s;
 	/* wait for fly in start+animation length */
 }
-.guildsWrapper-5TJh6A:hover ~ .flex-1xMQg5 .channels-Ie2l6A,
+.wrapper-1Rf91z:hover ~ .flex-1xMQg5 .channels-Ie2l6A,
 .channels-Ie2l6A:hover {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guildsWrapper-5TJh6A:hover ~ .flex-1xMQg5 .channels-Ie2l6A .unread-1Dp-OI,
+.wrapper-1Rf91z:hover ~ .flex-1xMQg5 .channels-Ie2l6A .unread-1Dp-OI,
 .channels-Ie2l6A:hover .unread-1Dp-OI {
 	left: 0px;
 	margin-top: -4px;
@@ -34,7 +34,7 @@
 /* scoot the rest of the app over to fit with the hidden channel panel */
 .chat-3bRxxu, /* chat */
 .container-3gCOGc /* friends panel */{
-	margin-left: -223px;
+	margin-left: -224px;
 }
 /* end flyout conversion */
 
