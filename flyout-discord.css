@@ -6,7 +6,7 @@
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
 .channels-Ie2l6A {
 	z-index: 128;
-	transform: translateX(-220px);
+	transform: translateX(-232px);
 	transition: transform 0.1s;
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
@@ -15,11 +15,20 @@
 .unread-1Dp-OI {
 	position: relative;
 	top: 22px;
-	left: 220px;
+	left: 232px;
 	transition: left;
 	transition-delay: 0.2s;
 	/* wait for fly in start+animation length */
 }
+/* hide scrollbar while sidebar is collapsed */
+.channels-Ie2l6A .scrollbar-2rkZSL{
+	width: 0px;
+}
+.scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+	padding-right: 0px;
+}
+
+
 .wrapper-1Rf91z:hover ~ .flex-1xMQg5 .channels-Ie2l6A,
 .channels-Ie2l6A:hover {
 	transform: translateX(0px);
@@ -31,10 +40,20 @@
 	margin-top: -4px;
 	transition-delay: 0.05s;
 }
+.wrapper-1Rf91z:hover ~ .flex-1xMQg5 .channels-Ie2l6A .scrollbar-2rkZSL,
+.channels-Ie2l6A:hover .scrollbar-2rkZSL {
+	width: 14px;
+}
+.wrapper-1Rf91z:hover ~ .flex-1xMQg5 .channels-Ie2l6A .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
+.channels-Ie2l6A:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+	padding-right: 17px;
+}
+
+
 /* scoot the rest of the app over to fit with the hidden channel panel */
 .chat-3bRxxu, /* chat */
 .container-3gCOGc /* friends panel */{
-	margin-left: -224px;
+	margin-left: -233px;
 }
 /* end flyout conversion */
 
