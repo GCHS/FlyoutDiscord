@@ -63,11 +63,6 @@ pre code {
 	background-color: #002b36 !important;
 }
 
-/* Turns the background of the New Messages line transparent so that it doesn't block out parts of messages */
-div.divider-3gKybi > span {
-	background-color: transparent !important;
-}
-
 /* the rest of this CSS removes (what I think is) extra whitespace */
 form {
 	margin: 0px 10px !important;
@@ -94,9 +89,6 @@ form {
 /* ...horizontal */
 .content-3dzVd8 {
 	padding: 0px !important;
-}
-.markup-2BOw-j {
-	margin-left: 60px;
 }
 
 /* Remove .gif insertion and nitro gift button */
@@ -196,8 +188,10 @@ form {
 
 /* remove unnecessary whitespace around messages */
 /* vertical... */
-.container-1YxwTf {
-	padding: 1px !important;
+.container-3FojY8 {
+	padding-top: 0px !important;
+	padding-bottom: 0px !important;
+	padding-left: 66px !important;
 }
 .message-1PNnaP {
 	margin: 0px !important;
@@ -206,10 +200,6 @@ form {
 	display: none;
 }
 
-/* ...horizontal */
-.content-3dzVd8 {
-	padding: 0px !important;
-}
 .markup-2BOw-j.slateTextArea-1Mkdgw {
 	margin-left: 0px;
 }
@@ -217,4 +207,9 @@ form {
 /* Remove .gif insertion and nitro gift button */
 .buttonWrapper-1ZmCpA{
 	display: none;
+}
+
+/* Remove extra space below the block of messages */
+.scroller-3sQKXg::after{
+	flex-shrink: 1;
 }
