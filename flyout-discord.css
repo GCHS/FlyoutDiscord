@@ -86,8 +86,11 @@ form {
 }
 
 /* Remove .gif insertion and nitro gift button */
-.buttonWrapper-1ZmCpA{
+.button-38aScr:not(.emojiButton-3uL3Aw){
 	display: none;
+}
+.markup-2BOw-j.slateTextArea-1Mkdgw{
+    padding-right: 0;
 }
 
 /* reduce contrast on the emoji picker button */
