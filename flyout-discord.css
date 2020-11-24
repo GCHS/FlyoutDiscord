@@ -86,7 +86,7 @@ form {
 }
 
 /* Remove .gif insertion and nitro gift button */
-.button-38aScr:not(.emojiButton-3uL3Aw){
+.channelTextArea-rNsIhG.channelTextArea-2VhZ6z .buttons-3JBrkn .button-38aScr:not(.emojiButton-3uL3Aw){
 	display: none;
 }
 .markup-2BOw-j.slateTextArea-1Mkdgw{
