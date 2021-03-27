@@ -29,22 +29,22 @@
 }
 
 
-.wrapper-1Rf91z:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh,
+.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh,
 .sidebar-2K8pFh:hover {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.wrapper-1Rf91z:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .unread-3zKkbm,
+.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .unread-3zKkbm,
 .sidebar-2K8pFh:hover .unread-3zKkbm {
 	left: 0px;
 	margin-top: -4px;
 	transition-delay: 0.05s;
 }
-.wrapper-1Rf91z:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .scrollbar-2rkZSL,
+.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .scrollbar-2rkZSL,
 .sidebar-2K8pFh:hover .scrollbar-2rkZSL {
 	width: 14px;
 }
-.wrapper-1Rf91z:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
+.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
 .sidebar-2K8pFh:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 17px;
 }
