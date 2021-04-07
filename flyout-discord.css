@@ -5,6 +5,7 @@
 /* Turn the channels panel into a flyout */
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
 .sidebar-2K8pFh {
+	position: relative;
 	z-index: 128;
 	transform: translateX(-232px);
 	transition: transform 0.1s;
@@ -12,13 +13,16 @@
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
-.unread-3zKkbm {
-	position: relative;
-	top: 22px;
-	left: 232px;
-	transition: left;
+.unread-2lAfLh {
+	position: absolute;
+	transform: translateX(232px);
+	transition: transform;
 	transition-delay: 0.2s;
 	/* wait for fly in start+animation length */
+}
+#channels{
+	overflow-x: clip !important;
+	overflow-y: hidden !important;
 }
 /* hide scrollbar while sidebar is collapsed */
 .sidebar-2K8pFh .scrollbar-2rkZSL{
@@ -34,12 +38,19 @@
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .unread-3zKkbm,
-.sidebar-2K8pFh:hover .unread-3zKkbm {
-	left: 0px;
-	margin-top: -4px;
+.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .unread-2lAfLh,
+.sidebar-2K8pFh:hover .unread-2lAfLh {
+	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
+.wrapper-3NnKdC:hover ~ .base-3dtUhz #channels,
+#channels:hover{
+	overflow-x: hidden !important;
+	overflow-y: scroll !important;
+	transition: overflow-x, overflow-y;
+	transition-delay: 0.05s;
+}
+
 .wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .scrollbar-2rkZSL,
 .sidebar-2K8pFh:hover .scrollbar-2rkZSL {
 	width: 14px;
