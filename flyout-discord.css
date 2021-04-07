@@ -12,6 +12,19 @@
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
+
+/*Move the cute little round inside corner up in the heirarchy*/
+/*This way it's still there when the sidebar is collapsed*/
+/*And the sidebar slides around beneath it*/
+.platform-win .sidebar-2K8pFh{
+	border-top-left-radius: 0px;
+}
+.platform-win .base-3dtUhz{
+	border-top-left-radius: 8px !important;
+	border-color: var(--background-tertiary);
+	border-style: solid;
+}
+
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
 .unread-2lAfLh {
 	position: absolute;
