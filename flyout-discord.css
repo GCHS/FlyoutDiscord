@@ -4,7 +4,7 @@
 
 /* Turn the channels panel into a flyout */
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
-.sidebar-2K8pFh {
+.sidebar-1tnWFu {
 	position: relative;
 	z-index: 128;
 	transform: translateX(-232px);
@@ -13,50 +13,58 @@
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
 
-/*Move the cute little round inside corner up in the heirarchy*/
-/*This way it's still there when the sidebar is collapsed*/
-/*And the sidebar slides around beneath it*/
-.platform-win .sidebar-2K8pFh{
+/* Move the cute little round inside corner up in the heirarchy */
+/* This way it's still there when the sidebar is collapsed */
+/* And the sidebar slides around beneath it */
+.platform-win .sidebar-1tnWFu{
 	border-top-left-radius: 0px;
 }
-.platform-win .base-3dtUhz{
+.platform-win .base-2jDfDU{
 	border-top-left-radius: 8px !important;
 	border-color: var(--background-tertiary);
 	border-style: solid;
 }
 
+/* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
+.panels-3wFtMD{
+	height: 0px;
+	transition-property: height 0.1s !important;
+	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
+	transition-delay: 2s !important; /* wait for fly in start+animation length */
+}
+
+
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
-.unread-2lAfLh {
+.unread-36eUEm {
 	position: absolute;
 	transform: translateX(232px);
 	transition: transform;
-	transition-delay: 0.2s;
-	/* wait for fly in start+animation length */
+	transition-delay: 0.2s; /* wait for fly in start+animation length */
 }
 #channels{
 	overflow-x: clip !important;
 	overflow-y: hidden !important;
 }
 /* hide scrollbar while sidebar is collapsed */
-.sidebar-2K8pFh .scrollbar-2rkZSL{
+.sidebar-1tnWFu .scrollbar-2rkZSL{
 	width: 0px;
 }
-.sidebar-2K8pFh .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.sidebar-1tnWFu .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 0px;
 }
 
-
-.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh,
-.sidebar-2K8pFh:hover {
+/* slide things back into visibility when the channel or guild sidebars are hovered */
+.wrapper-1_HaEi:hover ~ .base-2jDfDU .content-1SgpWY .sidebar-1tnWFu,
+.sidebar-1tnWFu:hover {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .unread-2lAfLh,
-.sidebar-2K8pFh:hover .unread-2lAfLh {
+.wrapper-1_HaEi:hover ~ .base-2jDfDU .content-1SgpWY .sidebar-1tnWFu .unread-36eUEm,
+.sidebar-1tnWFu:hover .unread-36eUEm {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.wrapper-3NnKdC:hover ~ .base-3dtUhz #channels,
+.wrapper-1_HaEi:hover ~ .base-2jDfDU #channels,
 #channels:hover{
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
@@ -64,19 +72,26 @@
 	transition-delay: 0.05s;
 }
 
-.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .scrollbar-2rkZSL,
-.sidebar-2K8pFh:hover .scrollbar-2rkZSL {
+.wrapper-1_HaEi:hover ~ .base-2jDfDU .content-1SgpWY .sidebar-1tnWFu .scrollbar-2rkZSL,
+.sidebar-1tnWFu:hover .scrollbar-2rkZSL {
 	width: 14px;
 }
-.wrapper-3NnKdC:hover ~ .base-3dtUhz .content-98HsJk .sidebar-2K8pFh .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
-.sidebar-2K8pFh:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.wrapper-1_HaEi:hover ~ .base-2jDfDU .content-1SgpWY .sidebar-1tnWFu .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
+.sidebar-1tnWFu:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 17px;
+}
+
+/* User Area panel*/
+.wrapper-1_HaEi:hover ~ .base-2jDfDU .content-1SgpWY .sidebar-1tnWFu .panels-3wFtMD,
+.sidebar-1tnWFu:hover .panels-3wFtMD{
+	height: auto;
+	transition-delay: 0.2s;
 }
 
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
-.chat-3bRxxu, /* chat */
-.container-3gCOGc /* friends panel */{
+.chat-2ZfjoI, /* chat */
+.container-2cd8Mz /* friends panel */{
 	margin-left: -233px;
 }
 /* end flyout conversion */
@@ -92,37 +107,27 @@ form {
 	margin: 0px 10px !important;
 	box-shadow: none !important;
 }
-.channelTextArea-1LDbYG,
-.channelTextArea-rNsIhG {
+
+/* message input box */
+.channelTextArea-1FufC0.channelTextArea-1VQBuV {
 	margin-top: 1px;
 	padding: 0px !important;
 }
 
-/* remove unnecessary whitespace around messages */
-/* vertical... */
-.group-spacing-0 .groupStart-23k01U{
-	margin-top: 0px;
-}
-
-.compact-T3H92H.wrapper-2a6GCs, .cozy-3raOZG.wrapper-2a6GCs{
-	padding-top: 0px;
-	padding-bottom: 0px;
-}
-
 /* Remove .gif insertion and nitro gift button */
-.channelTextArea-rNsIhG.channelTextArea-2VhZ6z .buttons-3JBrkn .button-38aScr:not(.emojiButton-3uL3Aw){
+.channelTextArea-1FufC0.channelTextArea-1VQBuV .buttons-uaqb-5 .button-f2h6uQ:not(.emojiButton-3FRTuj.emojiButton-1fMsf3){
 	display: none;
 }
-.markup-2BOw-j.slateTextArea-1Mkdgw{
-    padding-right: 0;
+.markup-eYLPri.slateTextArea-27tjG0 {
+	padding-right: 0;
 }
 
-/* reduce contrast on the emoji picker button */
-.sprite-2iCowe{
+/* reduce contrast on the emoji picker and upload buttons */
+.sprite-2lxwfc, .attachButtonPlus-3IYelE{
 	opacity: 0.3;
 }
 
 /* Remove extra space below the block of messages */
-.scroller-3sQKXg::after{
-	flex-shrink: 1;
+.scrollerSpacer-3AqkT9{
+	display: none;
 }
