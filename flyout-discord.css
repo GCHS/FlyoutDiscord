@@ -120,8 +120,8 @@ form {
 	padding: 0px !important;
 }
 
-/* Remove .gif insertion and nitro gift button */
-.channelTextArea-1FufC0.channelTextArea-1VQBuV .buttons-uaqb-5 .button-f2h6uQ:not(.emojiButton-3FRTuj.emojiButton-1fMsf3){
+/* Remove .gif insertion, sticker, and nitro gift buttons */
+.channelTextArea-1FufC0.channelTextArea-1VQBuV .buttons-uaqb-5 .button-ejjZWC:not(.emojiButton-3FRTuj.emojiButton-1fMsf3){
 	display: none;
 }
 .markup-eYLPri.slateTextArea-27tjG0 {
