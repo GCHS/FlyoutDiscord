@@ -27,12 +27,14 @@
 
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
 .panels-3wFtMD{
+	transition-property: height !important;
 	height: 0px;
-	transition-property: height 0.1s !important;
+	transition-duration: 0.1s !important;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 	transition-delay: 2s !important; /* wait for fly in start+animation length */
 }
 
+/*TODO: fix spacing around messagebox, excessive messagebox vertical padding, change sidebar color when collapsed to make it match main panel color*/
 
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
 .unread-36eUEm {
@@ -90,7 +92,7 @@
 
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
-.chat-2ZfjoI, /* chat */
+.chat-9g_3Xj, /* chat */
 .container-2cd8Mz /* friends panel */{
 	margin-left: -233px;
 }
@@ -120,8 +122,8 @@ form {
 	padding: 0px !important;
 }
 
-/* Remove .gif insertion, sticker, and nitro gift buttons */
-.channelTextArea-1FufC0.channelTextArea-1VQBuV .buttons-uaqb-5 .button-ejjZWC:not(.emojiButton-3FRTuj.emojiButton-1fMsf3){
+/* Remove .gif insertion and nitro gift button */
+.chatContainer-2XIz4Y .buttons-uaqb-5 .button-ejjZWC:not(.emojiButton-3FRTuj.emojiButton-1fMsf3){
 	display: none;
 }
 .markup-eYLPri.slateTextArea-27tjG0 {
