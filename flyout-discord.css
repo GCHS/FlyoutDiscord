@@ -4,7 +4,7 @@
 
 /* Turn the channels panel into a flyout */
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
-.sidebar_e031be {
+.sidebar_a4d4d9 {
 	position: relative;
 	z-index: 128;
 	transform: translateX(-232px);
@@ -16,17 +16,17 @@
 /* Move the cute little round inside corner up in the heirarchy */
 /* This way it's still there when the sidebar is collapsed */
 /* And the sidebar slides around beneath it */
-.platform-win .sidebar_e031be{
+.platform-win .sidebar_a4d4d9{
 	border-top-left-radius: 0px;
 }
-.platform-win .base_c0676e{
+.platform-win .base_a4d4d9{
 	border-top-left-radius: 8px !important;
 	border-color: var(--background-tertiary);
 	border-style: solid;
 }
 
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
-.panels-3wFtMD{
+.panels_a4d4d9{
 	transition-property: height !important;
 	height: 0px;
 	transition-duration: 0.1s !important;
@@ -48,25 +48,25 @@
 	overflow-y: hidden !important;
 }
 /* hide scrollbar while sidebar is collapsed */
-.sidebar_e031be .scrollbar-2rkZSL{
+.sidebar_a4d4d9 .scrollbar-2rkZSL{
 	width: 0px;
 }
-.sidebar_e031be .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.sidebar_a4d4d9 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 0px;
 }
 
 /* slide things back into visibility when the channel or guild sidebars are hovered */
-.guilds__2b93a:hover ~ .base_c0676e .content__76dcf .sidebar_e031be,
-.sidebar_e031be:hover {
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9,
+.sidebar_a4d4d9:hover {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds__2b93a:hover ~ .base_c0676e .content__76dcf .sidebar_e031be .unread__48cf4,
-.sidebar_e031be:hover .unread__48cf4 {
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .unread__48cf4,
+.sidebar_a4d4d9:hover .unread__48cf4 {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds__2b93a:hover ~ .base_c0676e #channels,
+.guilds_a4d4d9:hover ~ .base_a4d4d9 #channels,
 #channels:hover{
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
@@ -74,35 +74,29 @@
 	transition-delay: 0.05s;
 }
 
-.guilds__2b93a:hover ~ .base_c0676e .content__76dcf .sidebar_e031be .scrollbar-2rkZSL,
-.sidebar_e031be:hover .scrollbar-2rkZSL {
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .scrollbar-2rkZSL,
+.sidebar_a4d4d9:hover .scrollbar-2rkZSL {
 	width: 14px;
 }
-.guilds__2b93a:hover ~ .base_c0676e .content__76dcf .sidebar_e031be .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
-.sidebar_e031be:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
+.sidebar_a4d4d9:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 17px;
 }
 
 /* User Area panel*/
-.guilds__2b93a:hover ~ .base_c0676e .content__76dcf .sidebar_e031be .panels-3wFtMD,
-.sidebar_e031be:hover .panels-3wFtMD{
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .panels_a4d4d9,
+.sidebar_a4d4d9:hover .panels_a4d4d9{
 	height: auto;
 	transition-delay: 0.2s;
 }
 
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
-.chat__52833, /* chat */
-.container_bd15da /* friends panel */{
+.chat_a7d72e, /* chat */
+.container_c2739c /* friends panel */{
 	margin-left: -233px;
 }
 /* end flyout conversion */
-
-/* code blocks (triple backticks) use Solarized text colors; */
-/* this makes the background Solarized Dark so they look correct (and pretty!) */
-pre code {
-	background-color: #002b36 !important;
-}
 
 /* the rest of this CSS removes (what I think is) extra whitespace */
 form {
@@ -111,31 +105,32 @@ form {
 }
 
 /* individual messages */
-.message_ccca67{
+.message_d5deea{
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 }
 
 /* message input box */
-.channelTextArea__2e60f.channelTextArea__56a36 {
+.channelTextArea_a7d72e.channelTextArea_d0696b {
 	margin-top: 1px;
 	padding: 0px !important;
 }
 
-/* Remove .gif insertion and nitro gift button */
-.buttons__7ecff .button__437ce:not(.emojiButton__8ff6a.emojiButton__30ec7){
+/* Remove .gif, sticker insertion and nitro gift button */
+.buttons_d0696b button:not(.emojiButton_af14ca.emojiButton_d0696b)
+ {
 	display: none;
 }
-.markup-eYLPri.slateTextArea-27tjG0 {
+.slateTextArea_e52116 {
 	padding-right: 0;
 }
 
 /* reduce contrast on the emoji picker and upload buttons */
-.attachButtonPlus_fd0021, .attachButtonPlus_bf89ca{
-	opacity: 0.3;
+.attachButtonInner_f298d4, .spriteGreyscale_af14ca {
+	opacity: 0.4;
 }
 
 /* Remove extra space below the block of messages */
-.scrollerSpacer__6b1b6{
+.scrollerSpacer_e2e187{
 	display: none;
 }
