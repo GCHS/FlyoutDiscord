@@ -37,7 +37,7 @@
 /*TODO: fix spacing around messagebox, excessive messagebox vertical padding, change sidebar color when collapsed to make it match main panel color*/
 
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
-.unread__48cf4 {
+.unread_d8bfb3 {
 	position: absolute;
 	transform: translateX(232px);
 	transition: transform;
@@ -61,8 +61,8 @@
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .unread__48cf4,
-.sidebar_a4d4d9:hover .unread__48cf4 {
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .unread_d8bfb3,
+.sidebar_a4d4d9:hover .unread_d8bfb3 {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
