@@ -100,6 +100,9 @@
 
 /* the rest of this CSS removes (what I think is) extra whitespace */
 form {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 7px !important;
 	margin: 0px 10px !important;
 	box-shadow: none !important;
 }
@@ -133,4 +136,9 @@ form {
 /* Remove extra space below the block of messages */
 .scrollerSpacer_e2e187{
 	display: none;
+}
+
+/* kill app launcher (this don't belong here, taking space from the chatbar) */
+.channelAppLauncher_df39bd{
+    display: none;
 }
