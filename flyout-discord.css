@@ -16,17 +16,17 @@
 /* Move the cute little round inside corner up in the heirarchy */
 /* This way it's still there when the sidebar is collapsed */
 /* And the sidebar slides around beneath it */
-.platform-win .sidebar_a4d4d9{
+.platform-win .sidebar_a4d4d9 {
 	border-top-left-radius: 0px;
 }
-.platform-win .base_a4d4d9{
+.platform-win .base_a4d4d9 {
 	border-top-left-radius: 8px !important;
 	border-color: var(--background-tertiary);
 	border-style: solid;
 }
 
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
-.panels_a4d4d9{
+.panels_a4d4d9 {
 	transition-property: height !important;
 	height: 0px;
 	transition-duration: 0.1s !important;
@@ -43,7 +43,7 @@
 	transition: transform;
 	transition-delay: 0.2s; /* wait for fly in start+animation length */
 }
-#channels{
+#channels {
 	overflow-x: clip !important;
 	overflow-y: hidden !important;
 }
@@ -67,7 +67,7 @@
 	transition-delay: 0.05s;
 }
 .guilds_a4d4d9:hover ~ .base_a4d4d9 #channels,
-#channels:hover{
+#channels:hover {
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
 	transition: overflow-x, overflow-y;
@@ -93,16 +93,16 @@
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
 .chat_a7d72e, /* chat */
-.container_c2739c /* friends panel */{
+.container_c2739c /* friends panel */ {
 	margin-left: -233px;
 }
 /* end flyout conversion */
 
 /* the rest of this CSS removes (what I think is) extra whitespace */
 form {
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    padding-top: 7px !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	padding-top: 7px !important;
 	margin: 0px 10px !important;
 	box-shadow: none !important;
 }
@@ -120,8 +120,7 @@ form {
 }
 
 /* Remove .gif, sticker insertion and nitro gift button */
-.buttons_d0696b button:not(.emojiButton_af14ca.emojiButton_d0696b)
- {
+.buttons_bdf0de :not(:last-child) {
 	display: none;
 }
 .slateTextArea_e52116 {
@@ -129,7 +128,7 @@ form {
 }
 
 /* reduce contrast on the emoji picker and upload buttons */
-.attachButtonInner_f298d4, .spriteGreyscale_af14ca {
+.attachButtonInner_f298d4, .emojiButton_bdf0de {
 	opacity: 0.4;
 }
 
@@ -140,5 +139,5 @@ form {
 
 /* kill app launcher (this don't belong here, taking space from the chatbar) */
 .channelAppLauncher_df39bd{
-    display: none;
+	display: none;
 }
