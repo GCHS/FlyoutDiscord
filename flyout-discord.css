@@ -19,7 +19,7 @@
 .platform-win .sidebar_c48ade {
 	border-top-left-radius: 0px;
 }
-.platform-win .base_a4d4d9 {
+.platform-win .base_c48ade {
 	border-top-left-radius: 8px !important;
 	border-color: var(--background-tertiary);
 	border-style: solid;
@@ -56,17 +56,17 @@
 }
 
 /* slide things back into visibility when the channel or guild sidebars are hovered */
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade,
+.guilds_c48ade:hover ~ .base_c48ade .content_c48ade .sidebar_c48ade,
 .sidebar_c48ade:hover {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .unread__2ea32,
+.guilds_c48ade:hover ~ .base_c48ade .content_c48ade .sidebar_c48ade .unread__2ea32,
 .sidebar_c48ade:hover .unread__2ea32 {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds_a4d4d9:hover ~ .base_a4d4d9 #channels,
+.guilds_c48ade:hover ~ .base_c48ade #channels,
 #channels:hover {
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
@@ -74,17 +74,17 @@
 	transition-delay: 0.05s;
 }
 
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .scrollbar-2rkZSL,
+.guilds_c48ade:hover ~ .base_c48ade .content_c48ade .sidebar_c48ade .scrollbar-2rkZSL,
 .sidebar_c48ade:hover .scrollbar-2rkZSL {
 	width: 14px;
 }
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
+.guilds_c48ade:hover ~ .base_c48ade .content_c48ade .sidebar_c48ade .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
 .sidebar_c48ade:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 17px;
 }
 
 /* User Area panel*/
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .panels_c48ade,
+.guilds_c48ade:hover ~ .base_c48ade .content_c48ade .sidebar_c48ade .panels_c48ade,
 .sidebar_c48ade:hover .panels_c48ade{
 	height: auto;
 	transition-delay: 0.2s;
