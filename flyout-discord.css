@@ -4,7 +4,7 @@
 
 /* Turn the channels panel into a flyout */
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
-.sidebar_a4d4d9 {
+.sidebar_c48ade {
 	position: relative;
 	z-index: 128;
 	transform: translateX(-232px);
@@ -16,7 +16,7 @@
 /* Move the cute little round inside corner up in the heirarchy */
 /* This way it's still there when the sidebar is collapsed */
 /* And the sidebar slides around beneath it */
-.platform-win .sidebar_a4d4d9 {
+.platform-win .sidebar_c48ade {
 	border-top-left-radius: 0px;
 }
 .platform-win .base_a4d4d9 {
@@ -26,7 +26,7 @@
 }
 
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
-.panels_a4d4d9 {
+.panels_c48ade {
 	transition-property: height !important;
 	height: 0px;
 	transition-duration: 0.1s !important;
@@ -37,7 +37,7 @@
 /*TODO: fix spacing around messagebox, excessive messagebox vertical padding, change sidebar color when collapsed to make it match main panel color*/
 
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
-.unread_d8bfb3 {
+.unread__2ea32 {
 	position: absolute;
 	transform: translateX(232px);
 	transition: transform;
@@ -48,21 +48,21 @@
 	overflow-y: hidden !important;
 }
 /* hide scrollbar while sidebar is collapsed */
-.sidebar_a4d4d9 .scrollbar-2rkZSL{
+.sidebar_c48ade .scrollbar-2rkZSL{
 	width: 0px;
 }
-.sidebar_a4d4d9 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.sidebar_c48ade .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 0px;
 }
 
 /* slide things back into visibility when the channel or guild sidebars are hovered */
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9,
-.sidebar_a4d4d9:hover {
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade,
+.sidebar_c48ade:hover {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .unread_d8bfb3,
-.sidebar_a4d4d9:hover .unread_d8bfb3 {
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .unread__2ea32,
+.sidebar_c48ade:hover .unread__2ea32 {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
@@ -74,26 +74,26 @@
 	transition-delay: 0.05s;
 }
 
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .scrollbar-2rkZSL,
-.sidebar_a4d4d9:hover .scrollbar-2rkZSL {
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .scrollbar-2rkZSL,
+.sidebar_c48ade:hover .scrollbar-2rkZSL {
 	width: 14px;
 }
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
-.sidebar_a4d4d9:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
+.sidebar_c48ade:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 17px;
 }
 
 /* User Area panel*/
-.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_a4d4d9 .panels_a4d4d9,
-.sidebar_a4d4d9:hover .panels_a4d4d9{
+.guilds_a4d4d9:hover ~ .base_a4d4d9 .content_a4d4d9 .sidebar_c48ade .panels_c48ade,
+.sidebar_c48ade:hover .panels_c48ade{
 	height: auto;
 	transition-delay: 0.2s;
 }
 
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
-.chat_a7d72e, /* chat */
-.container_c2739c /* friends panel */ {
+.chat_f75fb0, /* chat */
+.container__133bf /* friends panel */ {
 	margin-left: -233px;
 }
 /* end flyout conversion */
@@ -108,36 +108,37 @@ form {
 }
 
 /* individual messages */
-.message_d5deea{
+.message__5126c{
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 }
 
 /* message input box */
-.channelTextArea_a7d72e.channelTextArea_d0696b {
+.channelTextArea_f75fb0.channelTextArea__74017 {
 	margin-top: 1px;
 	padding: 0px !important;
 }
-
-/* Remove .gif, sticker insertion and nitro gift button */
-.buttons_bdf0de :not(:last-child) {
-	display: none;
-}
-.slateTextArea_e52116 {
+/* more message input box */
+.slateTextArea_ec4baf {
 	padding-right: 0;
 }
 
+/* Remove .gif, sticker insertion and nitro gift button */
+.buttons__74017 :not(:last-child) {
+	display: none;
+}
+
 /* reduce contrast on the emoji picker and upload buttons */
-.attachButtonInner_f298d4, .emojiButton_bdf0de {
+.attachButtonInner__0923f, .emojiButton__04eed {
 	opacity: 0.4;
 }
 
 /* Remove extra space below the block of messages */
-.scrollerSpacer_e2e187{
+.scrollerSpacer__36d07{
 	display: none;
 }
 
 /* kill app launcher (this don't belong here, taking space from the chatbar) */
-.channelAppLauncher_df39bd{
+.channelAppLauncher_e6e74f{
 	display: none;
 }
