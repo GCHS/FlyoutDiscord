@@ -6,14 +6,14 @@
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
 .sidebarList_c48ade {
 	position: relative;
-	z-index: 128;
+	z-index: 101;
 	transform: translateX(-300px);
 	transition: transform 0.1s;
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
 .guilds_c48ade {
-	z-index: 129;
+	z-index: 102;
 	margin-bottom: 0px !important;
 }
 
@@ -32,13 +32,13 @@
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
 .panels_c48ade {
 	z-index: 128 !important;
-	transform: translateY(60px) !important;
+	transform: translateY(120px) !important;
 	transition: transform 0.1s;
-	/* transition-delay: 2s !important; wait for fly in start+animation length */
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
-
-/*TODO: fix spacing around messagebox, excessive messagebox vertical padding, change sidebar color when collapsed to make it match main panel color*/
+.sidebar_c48ade::after{
+	display: none;
+}
 
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
 .unread__2ea32 {
