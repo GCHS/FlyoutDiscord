@@ -17,6 +17,11 @@
 	margin-bottom: 0px !important;
 }
 
+/* Hide the resize bar */
+.sidebarResizeHandle_c48ade {
+	display: none;
+}
+
 /* Move the cute little round inside corner up in the heirarchy */
 /* This way it's still there when the sidebar is collapsed */
 /* And the sidebar slides around beneath it */
@@ -119,6 +124,15 @@ form {
 	padding-top: 7px !important;
 	margin: 0px 10px !important;
 	box-shadow: none !important;
+}
+
+/* Hide the obscurant gradient
+	(not only do I not like it,)
+	(it otherwise covers the bottom message even when scrolled all the way down)
+	(also the one that occurs on non-scrolled-down typing-indicators)
+*/
+.chatGradientBase__36d07 {
+	display: none;
 }
 
 /* individual messages */
