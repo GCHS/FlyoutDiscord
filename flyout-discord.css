@@ -121,15 +121,20 @@
 form {
 	padding-left: 0px !important;
 	padding-right: 0px !important;
-	padding-top: 7px !important;
-	margin: 0px 10px !important;
+	padding-top: 0px !important;
+	margin: 15px 10px 0px !important;
 	box-shadow: none !important;
 }
+
+/*scoot the typing indicator into the gap we made with the padding-top*/
+/* .typing_b88801 {
+	transform: translateY(22px);
+} */
 
 /* Hide the obscurant gradient
 	(not only do I not like it,)
 	(it otherwise covers the bottom message even when scrolled all the way down)
-	(also the one that occurs on non-scrolled-down typing-indicators)
+	(this particular selector also hits the one that occurs on non-scrolled-down typing-indicators)
 */
 .chatGradientBase__36d07 {
 	display: none;
