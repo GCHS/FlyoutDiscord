@@ -37,7 +37,7 @@
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
 .panels__5e434 {
 	z-index: 128 !important;
-	transform: translateY(120px) !important;
+	transform: translateY(420px) !important;
 	transition: transform 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
@@ -186,3 +186,4 @@ scoot the typing indicator into the gap we made with the padding-top*/
 .iconItem_c69b6d.iconBase_c69b6d.iconNoChannelInfo_c69b6d{
 	display: none;
 }
+
