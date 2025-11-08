@@ -4,7 +4,7 @@
 
 /* Turn the channels panel into a flyout */
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
-.sidebarList_c48ade {
+.sidebarList__5e434 {
 	position: relative;
 	z-index: 101;
 	transform: translateX(-300px);
@@ -12,36 +12,36 @@
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
-.guilds_c48ade {
+.guilds__5e434 {
 	z-index: 102;
 	margin-bottom: 0px !important;
 }
 
 /* Hide the resize bar */
-.sidebarResizeHandle_c48ade {
+.sidebarResizeHandle__5e434 {
 	display: none;
 }
 
 /* Move the cute little round inside corner up in the heirarchy */
 /* This way it's still there when the sidebar is collapsed */
 /* And the sidebar slides around beneath it */
-.platform-win .sidebarList_c48ade {
+.platform-win .sidebarList__5e434 {
 	border-top-left-radius: 0px;
 }
-.platform-win .base_c48ade {
+.platform-win .base__5e434 {
 	border-top-left-radius: 8px !important;
 	border-color: var(--background-tertiary);
 	border-style: solid;
 }
 
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
-.panels_c48ade {
+.panels__5e434 {
 	z-index: 128 !important;
 	transform: translateY(120px) !important;
 	transition: transform 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
-.sidebar_c48ade::after{
+.sidebar__5e434::after{
 	display: none;
 }
 
@@ -57,61 +57,61 @@
 	overflow-y: hidden !important;
 }
 /* hide scrollbar while sidebar is collapsed */
-.sidebarList_c48ade .scrollbar-2rkZSL{
+.sidebarList__5e434 .scrollbar-2rkZSL{
 	width: 0px;
 }
-.sidebarList_c48ade .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.sidebarList__5e434 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 0px;
 }
 
 /* slide things back into visibility when the channel or guild sidebars are hovered */
-.guilds_c48ade:hover ~ .sidebarList_c48ade,
-.sidebarList_c48ade:hover,
-.sidebarList_c48ade:has(~ .panels_c48ade:hover) {
+.guilds__5e434:hover ~ .sidebarList__5e434,
+.sidebarList__5e434:hover,
+.sidebarList__5e434:has(~ .panels__5e434:hover) {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds_c48ade:hover ~ .sidebarList_c48ade .unread__2ea32,
-.sidebarList_c48ade:hover .unread__2ea32,
-.sidebarList_c48ade:has(~ .panels_c48ade:hover) .unread__2ea32 {
+.guilds__5e434:hover ~ .sidebarList__5e434 .unread__2ea32,
+.sidebarList__5e434:hover .unread__2ea32,
+.sidebarList__5e434:has(~ .panels__5e434:hover) .unread__2ea32 {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds_c48ade:hover ~ .sidebarList_c48ade #channels,
-.sidebarList_c48ade:hover #channels,
+.guilds__5e434:hover ~ .sidebarList__5e434 #channels,
+.sidebarList__5e434:hover #channels,
 #channels:hover,
-.sidebarList_c48ade:has(~ .panels_c48ade:hover) #channels {
+.sidebarList__5e434:has(~ .panels__5e434:hover) #channels {
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
 	transition: overflow-x, overflow-y;
 	transition-delay: 0.05s;
 }
-.guilds_c48ade:hover,
-.guilds_c48ade:has(~ .sidebarList_c48ade:hover),
-.guilds_c48ade:has(~ .panels_c48ade:hover) {
+.guilds__5e434:hover,
+.guilds__5e434:has(~ .sidebarList__5e434:hover),
+.guilds__5e434:has(~ .panels__5e434:hover) {
 	transition: margin-bottom 0.05s;
 	margin-bottom: 60px !important;
 }
 
-.guilds_c48ade:hover ~ .sidebarList_c48ade .scrollbar-2rkZSL,
-.sidebarList_c48ade:hover .scrollbar-2rkZSL {
+.guilds__5e434:hover ~ .sidebarList__5e434 .scrollbar-2rkZSL,
+.sidebarList__5e434:hover .scrollbar-2rkZSL {
 	width: 14px;
 }
-.guilds_c48ade:hover ~ .sidebarList_c48ade .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
-.sidebarList_c48ade:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+.guilds__5e434:hover ~ .sidebarList__5e434 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
+.sidebarList__5e434:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
 	padding-right: 17px;
 }
 
 /* User Area panel*/
-.guilds_c48ade:hover ~ .panels_c48ade,
-.sidebarList_c48ade:hover ~ .panels_c48ade,
-.panels_c48ade:hover{
+.guilds__5e434:hover ~ .panels__5e434,
+.sidebarList__5e434:hover ~ .panels__5e434,
+.panels__5e434:hover{
 	transform: translateY(0px) !important;
 }
 
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
-.page_c48ade /* friends panel */ {
+.page__5e434 /* friends panel */ {
 	margin-left: -300px;
 	width: calc(100% + 300px) !important;
 }
@@ -126,10 +126,10 @@ form {
 	box-shadow: none !important;
 }
 
-/*scoot the typing indicator into the gap we made with the padding-top*/
-/* .typing_b88801 {
-	transform: translateY(22px);
-} */
+scoot the typing indicator into the gap we made with the padding-top*/
+.typing_b88801 {
+	transform: translateY(-112px) !important;
+}
 
 /* Hide the obscurant gradient
 	(not only do I not like it,)
