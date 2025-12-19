@@ -4,51 +4,50 @@
 
 /* Turn the channels panel into a flyout */
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
-.sidebarList__5e434 {
+._5e434347c823b592-sidebarList{
 	position: relative;
 	z-index: 101;
-	transform: translateX(-300px);
+	transform: translateX(calc(67px - var(--custom-guild-sidebar-width)));
 	transition: transform 0.1s;
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
-.guilds__5e434 {
+._5e434347c823b592-guilds {
 	z-index: 102;
 	margin-bottom: 0px !important;
 }
-
-/* Hide the resize bar */
-.sidebarResizeHandle__5e434 {
+/* hide this while collapsed... */
+ ._5e434347c823b592-sidebarResizeHandle{
 	display: none;
-}
+ }
 
 /* Move the cute little round inside corner up in the heirarchy */
 /* This way it's still there when the sidebar is collapsed */
 /* And the sidebar slides around beneath it */
-.platform-win .sidebarList__5e434 {
+.platform-win ._5e434347c823b592-sidebarList {
 	border-top-left-radius: 0px;
 }
-.platform-win .base__5e434 {
+.platform-win ._5e434347c823b592-base {
 	border-top-left-radius: 8px !important;
 	border-color: var(--background-tertiary);
 	border-style: solid;
 }
 
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
-.panels__5e434 {
+._5e434347c823b592-panels {
 	z-index: 128 !important;
 	transform: translateY(420px) !important;
 	transition: transform 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
-.sidebar__5e434::after{
+._5e434347c823b592-sidebar::after{
 	display: none;
 }
 
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
-.unread__2ea32 {
+._2ea32c412048f708-unread {
 	position: absolute;
-	transform: translateX(300px);
+	transform: translateX(calc(var(--custom-guild-sidebar-width) - 70px));
 	transition: transform;
 	transition-delay: 0.2s; /* wait for fly in start+animation length */
 }
@@ -57,62 +56,80 @@
 	overflow-y: hidden !important;
 }
 /* hide scrollbar while sidebar is collapsed */
-.sidebarList__5e434 .scrollbar-2rkZSL{
+._5e434347c823b592-sidebarList .scrollbar-2rkZSL{
 	width: 0px;
 }
-.sidebarList__5e434 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+._5e434347c823b592-sidebarList .scrollerWrapPolyfill-DBQCMm .ef3116c2da186559-scroller.systemPad-3UxEGl{
 	padding-right: 0px;
 }
 
 /* slide things back into visibility when the channel or guild sidebars are hovered */
-.guilds__5e434:hover ~ .sidebarList__5e434,
-.sidebarList__5e434:hover,
-.sidebarList__5e434:has(~ .panels__5e434:hover) {
+._5e434347c823b592-guilds:hover ~ ._5e434347c823b592-sidebarList,
+._5e434347c823b592-sidebarList:hover,
+._5e434347c823b592-sidebarList:has(~ ._5e434347c823b592-panels:hover),
+._5e434347c823b592-sidebar:has(._5e434347c823b592-sidebarResizeHandle:hover) > ._5e434347c823b592-sidebarList, 
+._5e434347c823b592-sidebar:has(._5e434347c823b592-sidebarResizeHandle:active) > ._5e434347c823b592-sidebarList {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds__5e434:hover ~ .sidebarList__5e434 .unread__2ea32,
-.sidebarList__5e434:hover .unread__2ea32,
-.sidebarList__5e434:has(~ .panels__5e434:hover) .unread__2ea32 {
+._5e434347c823b592-guilds:hover ~ ._5e434347c823b592-sidebarList ._2ea32c412048f708-unread,
+._5e434347c823b592-sidebarList:hover ._2ea32c412048f708-unread,
+._5e434347c823b592-sidebarList:has(~ ._5e434347c823b592-panels:hover) ._2ea32c412048f708-unread,
+._5e434347c823b592-sidebar:has(._5e434347c823b592-sidebarResizeHandle:hover) > ._5e434347c823b592-sidebarList ._2ea32c412048f708-unread,
+._5e434347c823b592-sidebar:has(._5e434347c823b592-sidebarResizeHandle:active) > ._5e434347c823b592-sidebarList ._2ea32c412048f708-unread {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds__5e434:hover ~ .sidebarList__5e434 #channels,
-.sidebarList__5e434:hover #channels,
+._5e434347c823b592-guilds:hover ~ ._5e434347c823b592-sidebarList #channels,
+._5e434347c823b592-sidebarList:hover #channels,
 #channels:hover,
-.sidebarList__5e434:has(~ .panels__5e434:hover) #channels {
+._5e434347c823b592-sidebarList:has(~ ._5e434347c823b592-panels:hover) #channels,
+._5e434347c823b592-sidebar:has(._5e434347c823b592-sidebarResizeHandle:hover) > ._5e434347c823b592-sidebarList #channels, 
+._5e434347c823b592-sidebar:has(._5e434347c823b592-sidebarResizeHandle:active) > ._5e434347c823b592-sidebarList #channels {
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
 	transition: overflow-x, overflow-y;
 	transition-delay: 0.05s;
 }
-.guilds__5e434:hover,
-.guilds__5e434:has(~ .sidebarList__5e434:hover),
-.guilds__5e434:has(~ .panels__5e434:hover) {
+._5e434347c823b592-guilds:hover,
+._5e434347c823b592-guilds:has(~ ._5e434347c823b592-sidebarList:hover),
+._5e434347c823b592-guilds:has(~ ._5e434347c823b592-panels:hover),
+._5e434347c823b592-guilds:has(~ ._5e434347c823b592-sidebarResizeHandle:hover),
+._5e434347c823b592-guilds:has(~ ._5e434347c823b592-sidebarResizeHandle:active) {
 	transition: margin-bottom 0.05s;
 	margin-bottom: 60px !important;
 }
 
-.guilds__5e434:hover ~ .sidebarList__5e434 .scrollbar-2rkZSL,
-.sidebarList__5e434:hover .scrollbar-2rkZSL {
+/* ._5e434347c823b592-guilds:hover ~ ._5e434347c823b592-sidebarList .scrollbar-2rkZSL,
+._5e434347c823b592-sidebarList:hover .scrollbar-2rkZSL {
 	width: 14px;
-}
-.guilds__5e434:hover ~ .sidebarList__5e434 .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl,
-.sidebarList__5e434:hover .scrollerWrapPolyfill-DBQCMm .scroller-2FKFPG.systemPad-3UxEGl{
+} */
+._5e434347c823b592-guilds:hover ~ ._5e434347c823b592-sidebarList .ef3116c2da186559-scroller,
+._5e434347c823b592-sidebarList:hover .ef3116c2da186559-scroller, 
+._5e434347c823b592-sidebarResizeHandle:hover ~ ._5e434347c823b592-sidebarList .ef3116c2da186559-scroller, 
+._5e434347c823b592-sidebarResizeHandle:active ~ ._5e434347c823b592-sidebarList .ef3116c2da186559-scroller{
 	padding-right: 17px;
 }
 
 /* User Area panel*/
-.guilds__5e434:hover ~ .panels__5e434,
-.sidebarList__5e434:hover ~ .panels__5e434,
-.panels__5e434:hover{
+._5e434347c823b592-guilds:hover ~ ._5e434347c823b592-panels,
+._5e434347c823b592-sidebarList:hover ~ ._5e434347c823b592-panels,
+._5e434347c823b592-panels:hover,
+._5e434347c823b592-sidebarResizeHandle:hover ~ ._5e434347c823b592-panels, 
+._5e434347c823b592-sidebarResizeHandle:active ~ ._5e434347c823b592-panels {
 	transform: translateY(0px) !important;
 }
-
+._5e434347c823b592-guilds:hover ~ ._5e434347c823b592-sidebarResizeHandle,
+._5e434347c823b592-sidebarList:hover ~ ._5e434347c823b592-sidebarResizeHandle,
+._5e434347c823b592-panels:hover ~ ._5e434347c823b592-sidebarResizeHandle,
+._5e434347c823b592-sidebarResizeHandle:hover, 
+._5e434347c823b592-sidebarResizeHandle:active{
+	display: initial;
+}
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
-.page__5e434 /* friends panel */ {
-	margin-left: -300px;
+._5e434347c823b592-page /* friends panel */ {
+	margin-left: calc(67px - var(--custom-guild-sidebar-width));
 	width: calc(100% + 300px) !important;
 }
 /* end flyout conversion */
@@ -126,8 +143,8 @@ form {
 	box-shadow: none !important;
 }
 
-scoot the typing indicator into the gap we made with the padding-top*/
-.typing_b88801 {
+/* scoot the typing indicator into the gap we made with the padding-top*/
+.fb64c9a451c49797-typingIndicator {
 	transform: translateY(-112px) !important;
 }
 
@@ -136,43 +153,61 @@ scoot the typing indicator into the gap we made with the padding-top*/
 	(it otherwise covers the bottom message even when scrolled all the way down)
 	(this particular selector also hits the one that occurs on non-scrolled-down typing-indicators)
 */
-.chatGradientBase__36d07 {
+._36d072eab2b2e737-chatGradientBase {
 	display: none;
 }
 
 /* individual messages */
-.message__5126c{
+._5126c0cd07f243a0-message{
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 }
 
-/* message input box */
-.channelTextArea_f75fb0.channelTextArea__74017 {
+/* remove crazy padding from message input box */
+.f75fb00fb7356cbe-channelTextArea._740174f3d6a2c8fe-channelTextArea {
 	margin-top: 1px;
 	padding: 0px !important;
 }
-/* more message input box */
-.slateTextArea_ec4baf {
+.ec4baf0360ff3578-slateTextArea {
 	padding-right: 0;
 }
+._740174f3d6a2c8fe-textArea._740174f3d6a2c8fe-textAreaSlate.ec4baf0360ff3578-slateContainer > div > div {
+	padding: 5px 0;
+	min-height: 0 !important;
+}
+._740174f3d6a2c8fe-textArea{
+	min-height: 0px !important;
+}
+._0923f156a0410684-attachWrapper{
+	padding: 0;
+}
+._740174f3d6a2c8fe-buttons{
+	height: auto;
+}
+/* end message input box padding removal */
 
 /* Remove .gif, sticker insertion and nitro gift button */
-.buttons__74017 :not(:last-child) {
+._740174f3d6a2c8fe-buttons > ._740174f3d6a2c8fe-buttonContainer > :not(._04eede68d145ae81-emojiButton._740174f3d6a2c8fe-emojiButton) ,
+.c0c49a3e5c8626ac-container {
 	display: none;
+}
+/* Remove space left behind by the way we've removed the above buttons (there's still a lingering 0-size container on the :not()-selected ones) */
+._740174f3d6a2c8fe-buttons{
+	gap: 0px !important;
 }
 
 /* reduce contrast on the emoji picker and upload buttons */
-.attachButtonInner__0923f, .emojiButton__04eed {
+._0923f156a0410684-attachButton, ._04eede68d145ae81-emojiButtonNormal._04eede68d145ae81-emojiButton._740174f3d6a2c8fe-emojiButton {
 	opacity: 0.4;
 }
 
 /* Remove extra space below the block of messages */
-.scrollerSpacer__36d07{
+._36d072eab2b2e737-scrollerSpacer{
 	display: none;
 }
 
 /* kill app launcher (this don't belong here, taking space from the chatbar) */
-.channelAppLauncher_e6e74f{
+.e6e74fd4d1221f53-buttonContainer.app-launcher-entrypoint {
 	display: none !important;
 }
 
@@ -183,7 +218,6 @@ scoot the typing indicator into the gap we made with the padding-top*/
 		is kind of the wrong vibe in private spaces ngl
 	)
 */
-.iconItem_c69b6d.iconBase_c69b6d.iconNoChannelInfo_c69b6d{
+._2ea32c412048f708-children{
 	display: none;
 }
-
