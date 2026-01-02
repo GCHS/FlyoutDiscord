@@ -130,7 +130,7 @@
 /* scoot the rest of the app over to fit with the hidden channel panel */
 ._5e434347c823b592-page /* friends panel */ {
 	margin-left: calc(67px - var(--custom-guild-sidebar-width));
-	width: calc(100% + 300px) !important;
+	width: calc(100% + var(--custom-guild-sidebar-width) - 66px) !important;
 }
 /* end flyout conversion */
 
@@ -221,3 +221,4 @@ form {
 ._2ea32c412048f708-children{
 	display: none;
 }
+
