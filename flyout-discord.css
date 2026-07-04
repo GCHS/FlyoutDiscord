@@ -203,7 +203,7 @@ form {
 
 /* Remove .gif, sticker insertion and nitro gift button */
 .buttons__74017 > .buttonContainer__74017 > :not(.emojiButton__04eed.emojiButton__74017) ,
-.buttons__74017 > .button__74017 , /* what's with the special class for the nitro gift button? */
+.buttons__74017 > .container__5287f , /* what's with the special class for the nitro gift button? */
 .container_c0c49a {
 	display: none;
 }
