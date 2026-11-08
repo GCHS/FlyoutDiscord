@@ -4,7 +4,7 @@
 
 /* Turn the channels panel into a flyout */
 /* When collapsed, the right edge of the panel is still visible so you can see the unread indicators */
-.sidebarList__5e434{
+.sidebarList_pog62O{
 	position: relative;
 	z-index: 101;
 	transform: translateX(calc(67px - var(--custom-guild-sidebar-width)));
@@ -12,40 +12,40 @@
 	transition-delay: 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
-.guilds__5e434 {
+.guilds_pog62O {
 	z-index: 102;
 	margin-bottom: 0px !important;
 }
 /* hide this while collapsed... */
- .sidebarResizeHandle__5e434{
+ .sidebarResizeHandle_pog62O{
 	display: none;
  }
 
 /* Move the cute little round inside corner up in the heirarchy */
 /* This way it's still there when the sidebar is collapsed */
 /* And the sidebar slides around beneath it */
-.platform-win .sidebarList__5e434 {
+.platform-win .sidebarList_pog62O {
 	border-top-left-radius: 0px;
 }
-.platform-win .base__5e434 {
+.platform-win .base_pog62O {
 	border-top-left-radius: 8px !important;
 	border-color: var(--background-tertiary);
 	border-style: solid;
 }
 
 /* hide the User Area panel when the sidebar is collapsed to make the sliver of the visible sidebar look better */
-.panels__5e434 {
+.panels_pog62O {
 	z-index: 128 !important;
 	transform: translateY(420px) !important;
 	transition: transform 0.1s;
 	transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 0.0) !important;
 }
-.sidebar__5e434::after{
+.sidebar_pog62O::after{
 	display: none;
 }
 
 /* scoot the unread indicators over to the right edge when the channels are collapsed so you can see them */
-.unread__2ea32{
+.unread_TNyK-N{
 	position: absolute;
 	transform: translateX(calc(var(--custom-guild-sidebar-width) - 70px));
 	transition: transform;
@@ -63,87 +63,87 @@
 	overflow-y: hidden !important;
 }
 /* hide scrollbar while sidebar is collapsed */
-.sidebarList__5e434 .scrollbar-2rkZSL{
+.sidebarList_pog62O .scrollbar-2rkZSL{
 	width: 0px;
 }
-.sidebarList__5e434 .scrollerWrapPolyfill-DBQCMm .scroller_ef3116.systemPad-3UxEGl{
+.sidebarList_pog62O .scrollerWrapPolyfill-DBQCMm .scroller_ef3116.systemPad-3UxEGl{
 	padding-right: 0px;
 }
 
 /* slide things back into visibility when the channel or guild sidebars are hovered */
-.guilds__5e434:hover ~ .sidebarList__5e434,
-.sidebarList__5e434:hover,
-.sidebarList__5e434:has(~ .panels__5e434:hover),
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:hover) > .sidebarList__5e434, 
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:active) > .sidebarList__5e434 {
+.guilds_pog62O:hover ~ .sidebarList_pog62O,
+.sidebarList_pog62O:hover,
+.sidebarList_pog62O:has(~ .panels_pog62O:hover),
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:hover) > .sidebarList_pog62O, 
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:active) > .sidebarList_pog62O {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds__5e434:hover ~ .sidebarList__5e434 .unread__2ea32,
-.sidebarList__5e434:hover .unread__2ea32,
-.sidebarList__5e434:has(~ .panels__5e434:hover) .unread__2ea32,
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:hover) > .sidebarList__5e434 .unread__2ea32,
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:active) > .sidebarList__5e434 .unread__2ea32 {
+.guilds_pog62O:hover ~ .sidebarList_pog62O .unread_TNyK-N,
+.sidebarList_pog62O:hover .unread_TNyK-N,
+.sidebarList_pog62O:has(~ .panels_pog62O:hover) .unread_TNyK-N,
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:hover) > .sidebarList_pog62O .unread_TNyK-N,
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:active) > .sidebarList_pog62O .unread_TNyK-N {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds__5e434:hover ~ .sidebarList__5e434 .mentionsBadge__933a1,
-.sidebarList__5e434:hover .mentionsBadge__933a1,
-.sidebarList__5e434:has(~ .panels__5e434:hover) .mentionsBadge__933a1,
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:hover) > .sidebarList__5e434 .mentionsBadge__933a1,
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:active) > .sidebarList__5e434 .mentionsBadge__933a1 {
+.guilds_pog62O:hover ~ .sidebarList_pog62O .mentionsBadge__933a1,
+.sidebarList_pog62O:hover .mentionsBadge__933a1,
+.sidebarList_pog62O:has(~ .panels_pog62O:hover) .mentionsBadge__933a1,
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:hover) > .sidebarList_pog62O .mentionsBadge__933a1,
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:active) > .sidebarList_pog62O .mentionsBadge__933a1 {
 	transform: translateX(0px);
 	transition-delay: 0.05s;
 }
-.guilds__5e434:hover ~ .sidebarList__5e434 #channels,
-.sidebarList__5e434:hover #channels,
+.guilds_pog62O:hover ~ .sidebarList_pog62O #channels,
+.sidebarList_pog62O:hover #channels,
 #channels:hover,
-.sidebarList__5e434:has(~ .panels__5e434:hover) #channels,
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:hover) > .sidebarList__5e434 #channels, 
-.sidebar__5e434:has(.sidebarResizeHandle__5e434:active) > .sidebarList__5e434 #channels {
+.sidebarList_pog62O:has(~ .panels_pog62O:hover) #channels,
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:hover) > .sidebarList_pog62O #channels, 
+.sidebar_pog62O:has(.sidebarResizeHandle_pog62O:active) > .sidebarList_pog62O #channels {
 	overflow-x: hidden !important;
 	overflow-y: scroll !important;
 	transition: overflow-x, overflow-y;
 	transition-delay: 0.05s;
 }
-.guilds__5e434:hover,
-.guilds__5e434:has(~ .sidebarList__5e434:hover),
-.guilds__5e434:has(~ .panels__5e434:hover),
-.guilds__5e434:has(~ .sidebarResizeHandle__5e434:hover),
-.guilds__5e434:has(~ .sidebarResizeHandle__5e434:active) {
+.guilds_pog62O:hover,
+.guilds_pog62O:has(~ .sidebarList_pog62O:hover),
+.guilds_pog62O:has(~ .panels_pog62O:hover),
+.guilds_pog62O:has(~ .sidebarResizeHandle_pog62O:hover),
+.guilds_pog62O:has(~ .sidebarResizeHandle_pog62O:active) {
 	transition: margin-bottom 0.05s;
 	margin-bottom: 60px !important;
 }
 
-/* .guilds__5e434:hover ~ .sidebarList__5e434 .scrollbar-2rkZSL,
-.sidebarList__5e434:hover .scrollbar-2rkZSL {
+.guilds_pog62O:hover ~ .sidebarList_pog62O .scrollbar-2rkZSL,
+.sidebarList_pog62O:hover .scrollbar-2rkZSL {
 	width: 14px;
-} */
-.guilds__5e434:hover ~ .sidebarList__5e434 .scroller_ef3116,
-.sidebarList__5e434:hover .scroller_ef3116, 
-.sidebarResizeHandle__5e434:hover ~ .sidebarList__5e434 .scroller_ef3116, 
-.sidebarResizeHandle__5e434:active ~ .sidebarList__5e434 .scroller_ef3116{
+}
+.guilds_pog62O:hover ~ .sidebarList_pog62O .scroller_ef3116,
+.sidebarList_pog62O:hover .scroller_ef3116, 
+.sidebarResizeHandle_pog62O:hover ~ .sidebarList_pog62O .scroller_ef3116, 
+.sidebarResizeHandle_pog62O:active ~ .sidebarList_pog62O .scroller_ef3116{
 	padding-right: 17px;
 }
 
 /* User Area panel*/
-.guilds__5e434:hover ~ .panels__5e434,
-.sidebarList__5e434:hover ~ .panels__5e434,
-.panels__5e434:hover,
-.sidebarResizeHandle__5e434:hover ~ .panels__5e434, 
-.sidebarResizeHandle__5e434:active ~ .panels__5e434 {
+.guilds_pog62O:hover ~ .panels_pog62O,
+.sidebarList_pog62O:hover ~ .panels_pog62O,
+.panels_pog62O:hover,
+.sidebarResizeHandle_pog62O:hover ~ .panels_pog62O, 
+.sidebarResizeHandle_pog62O:active ~ .panels_pog62O {
 	transform: translateY(0px) !important;
 }
-.guilds__5e434:hover ~ .sidebarResizeHandle__5e434,
-.sidebarList__5e434:hover ~ .sidebarResizeHandle__5e434,
-.panels__5e434:hover ~ .sidebarResizeHandle__5e434,
-.sidebarResizeHandle__5e434:hover, 
-.sidebarResizeHandle__5e434:active{
+.guilds_pog62O:hover ~ .sidebarResizeHandle_pog62O,
+.sidebarList_pog62O:hover ~ .sidebarResizeHandle_pog62O,
+.panels_pog62O:hover ~ .sidebarResizeHandle_pog62O,
+.sidebarResizeHandle_pog62O:hover, 
+.sidebarResizeHandle_pog62O:active{
 	display: initial;
 }
 
 /* scoot the rest of the app over to fit with the hidden channel panel */
-.page__5e434 /* friends panel */ {
+.page_pog62O /* friends panel */ {
 	margin-left: calc(67px - var(--custom-guild-sidebar-width));
 	width: calc(100% + var(--custom-guild-sidebar-width) - 66px) !important;
 }
@@ -168,57 +168,57 @@ form {
 	(it otherwise covers the bottom message even when scrolled all the way down)
 	(this particular selector also hits the one that occurs on non-scrolled-down typing-indicators)
 */
-.chatGradientBase__36d07 {
+.chatGradientBase_8AE1Qq {
 	display: none;
 }
 
 /* individual messages */
-.message__5126c{
+.message__SY_P2T{
 	padding-top: 0px !important;
 	padding-bottom: 0px !important;
 }
 
 /* remove crazy padding from message input box */
-.channelTextArea_f75fb0.channelTextArea__74017 {
+.channelTextArea_z_gUBg.channelTextArea_2x8-Qn {
 	margin-top: 1px;
 	padding: 0px !important;
 }
-.slateTextArea_ec4baf {
+.slateTextArea_q99V_- {
 	padding-right: 0;
 }
-.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf > div > div {
+.textArea_2x8-Qn.textAreaSlate_2x8-Qn.slateContainer_q99V_- > div > div {
 	padding: 5px 0;
 	min-height: 0 !important;
 }
-.textArea__74017{
+.textArea_2x8-Qn{
 	min-height: 0px !important;
 }
-.attachWrapper__0923f{
+.attachWrapper_7TM4SO{
 	padding: 0;
 }
-.buttons__74017{
+.buttons_2x8-Qn{
 	height: auto;
 }
 /* end message input box padding removal */
 
 /* Remove .gif, sticker insertion and nitro gift button */
-.buttons__74017 > .buttonContainer__74017 > :not(.emojiButton__04eed.emojiButton__74017) ,
-.buttons__74017 > .container__5287f , /* what's with the special class for the nitro gift button? */
-.container_c0c49a {
+.buttons_2x8-Qn > .buttonContainer_2x8-Qn > :not(.emojiButton_SjG8Ug.emojiButton_2x8-Qn) ,
+.buttons_2x8-Qn > .container_ejC3ZL , /* what's with the special class for the nitro gift button? */
+.app-launcher-entrypoint {
 	display: none;
 }
 /* Remove space left behind by the way we've removed the above buttons (there's still a lingering 0-size container on the :not()-selected ones) */
-.buttons__74017{
+.buttons_2x8-Qn{
 	gap: 0px !important;
 }
 
 /* reduce contrast on the emoji picker and upload buttons */
-.attachButton__0923f, .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017 {
+.attachButton_7TM4SO, .emojiButtonNormal_SjG8Ug.emojiButton_SjG8Ug.emojiButton_2x8-Qn {
 	opacity: 0.4;
 }
 
 /* Remove extra space below the block of messages */
-.scrollerSpacer__36d07{
+.scrollerSpacer_8AE1Qq{
 	display: none;
 }
 
@@ -238,6 +238,6 @@ form {
 	which doesn't offend me specifically,
 	but is also redundant
 */
-div.children__2ea32 > span{
+div.children_TNyK-N > span{
 	display: none;
 }
